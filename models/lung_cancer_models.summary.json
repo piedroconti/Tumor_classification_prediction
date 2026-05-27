@@ -1,0 +1,17 @@
+{
+  "rna_protein": {
+    "tumor_normal_training_accuracy": 1.0,
+    "luad_lscc_training_accuracy": 1.0,
+    "survival_training_accuracy": 0.9074074074074074
+  },
+  "rna": {
+    "tumor_normal_training_accuracy": 1.0,
+    "luad_lscc_training_accuracy": 1.0,
+    "survival_training_accuracy": 0.8765432098765432
+  },
+  "protein": {
+    "tumor_normal_training_accuracy": 1.0,
+    "luad_lscc_training_accuracy": 1.0,
+    "survival_training_accuracy": 0.8641975308641975
+  }
+}
