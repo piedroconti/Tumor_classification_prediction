@@ -25,8 +25,6 @@ src/predict_survival.py       # Task 3
 
 ```text
 lung_cancer_prediction_taskwise_terminal/
-├── README.md
-├── requirements.txt
 ├── data/
 │   └──test/         # 여기에 평가용 데이터 배치
 ├── models/
@@ -38,8 +36,10 @@ lung_cancer_prediction_taskwise_terminal/
 │   ├── predict_luad_lscc.py
 │   ├── predict_survival.py
 │   └── train_model.py
-└── scripts/
-    └── check_public_training_accuracy.py
+├── scripts/
+│   └── check_public_training_accuracy.py
+├── README.md
+└── requirements.txt
 ```
 
 `models/lung_cancer_models.joblib`에는 공개 training TSV로 미리 학습한 모델이 저장되어 있습니다.  
@@ -69,16 +69,18 @@ joblib
 
 평가용 TSV 파일을 `data/test/` 폴더에 넣습니다.
 
+테스트 파일명은 아래와 같아야 합니다.
+
 ```text
-data/test/
-├── LUAD_testset_rna_expression_tumor.tsv
-├── LUAD_testset_rna_expression_nat.tsv
-├── LUAD_testset_protein_expression_tumor.tsv
-├── LUAD_testset_protein_expression_nat.tsv
-├── LSCC_testset_rna_expression_tumor.tsv
-├── LSCC_testset_rna_expression_nat.tsv
-├── LSCC_testset_protein_expression_tumor.tsv
-└── LSCC_testset_protein_expression_nat.tsv
+LUAD_testset_rna_expression_tumor.tsv
+LUAD_testset_rna_expression_nat.tsv
+LUAD_testset_protein_expression_tumor.tsv
+LUAD_testset_protein_expression_nat.tsv
+
+LSCC_testset_rna_expression_tumor.tsv
+LSCC_testset_rna_expression_nat.tsv
+LSCC_testset_protein_expression_tumor.tsv
+LSCC_testset_protein_expression_nat.tsv
 ```
 
 
